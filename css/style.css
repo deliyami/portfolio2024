@@ -178,6 +178,7 @@ header {
   line-height: 2.5;
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
 }
 .hamburger-menu-items:hover {
   opacity: 0.7;
