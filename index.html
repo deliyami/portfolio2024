@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポートフォリオ</title>
+  <meta name="description" content="jang hyeonseok" />
+  <link data-n-head="true" rel="icon" type="image/x-icon" href="images/yuuka_dot.png" />
+
+  <!-- js --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="plugin/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/fade.js"></script> 
+
+  <!--css--> 
+  <link type="text/css" href="plugin/slick/slick.css" rel="stylesheet" />
+  <link type="text/css" href="plugin/slick/slick-theme.css" rel="stylesheet" />
+  <link type="text/css" href="css/slick.css" rel="stylesheet" />
+  <link type="text/css" href="css/style.css?ver=2.15" rel="stylesheet" />
+  <link type="text/css" href="css/responsive.css?ver=2.15" rel="stylesheet" />
+</head>
+
+<body>
+
+<header>
+  <div class="hamburger">
+    <button class="hamburger-button"> <span></span> <span></span> <span></span> </button>
+  </div>
+</header>
+<main> 
+  <!-- nav -->
+  <nav class="hamburger-menu">
+    <div class="hamburger-menu-container">
+      <div class="hamburger-cancel-container">
+        <button class="hamburger-cancel-button"> <span></span> <span></span> </button>
+      </div>
+      <button class="hamburger-menu-items nav-top">Top</button>
+      <button class="hamburger-menu-items nav-skill">Skill</button>
+      <button class="hamburger-menu-items nav-project">参加したプロジェクト</button>
+      <button class="hamburger-menu-items nav-other">その他</button>
+    </div>
+  </nav>
+  <!-- PC のみ見せる -->
+  <section class="fish">
+    <div class="fish-wave-right">
+      <img class="fish-wave-first" src="images/fish.svg" alt="fish">
+      <img class="fish-wave-second" src="images/fish.svg" alt="fish">
+      <img class="fish-wave-third" src="images/fish.svg" alt="fish">
+    </div>
+    <div class="fish-wave-left">
+      <img class="fish-wave-first" src="images/fish.svg" alt="fish">
+      <img class="fish-wave-second" src="images/fish.svg" alt="fish">
+      <img class="fish-wave-third" src="images/fish.svg" alt="fish">
+    </div>
+  </section>
+  <!-- SP, PC 両方みせる -->
+  <section class="container">
+    <div class="first-view">
+      <!-- <div class="first-view-sky"></div> -->
+      <div class="first-view-profile">
+        <img class="first-view-profile-picture" src="images/yuuka_dot.png" alt="profile">
+        <h1 class="first-view-profile-title">Links</h1>
+        <div class="first-view-profile-links">
+          <a  href="https://github.com/deliyami">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="github" />
+          </a>
+          <a href="https://qiita.com/dkdidudtn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Qiita_Logo.svg" alt="qiita" />
+          </a>
+        </div>
+      </div>
+      <div class="first-view-wave"></div>
+      <div class="first-view-blank"></div>
+    </div>
+  </section>
+  <!-- SP：scroll, PC：右側 -->
+  <section class="SP">
+    <div class="SP-container">
+      <div id="skill" class="skill fadeUpTrigger">
+        <h2 class="skill-title">Skill Level</h2>
+        <div class="skill-about">
+          <table class="skill-about-table">
+            <tbody>
+              <tr>
+                <td class="subject">上</td>
+                <td>以下のことを含めて、言語の関連の資格</td>
+              </tr>
+              <tr>
+                <td class="subject">中</td>
+                <td>以下のことを含めて、プロジェクトに活用したこと</td>
+              </tr>
+              <tr>
+                <td class="subject">下</td>
+                <td>練習として、使ったことがあること</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="skill-container">
+          <table class="skill-container-table">
+            <thead>
+              <tr>
+                <td class="subject">プログラミング<br>技術</td>
+                <td>Level</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="javascript">
+                <td class="subject"><img class="skill-img" src="images/javascript.svg" alt="lang"></td>
+                <td><span class="skill-text">中</span></td>
+              </tr>
+              <tr class="typescript">
+                <td class="subject"><img class="skill-img" src="images/typescript.svg" alt="lang"></td>
+                <td><span class="skill-text">中</span></td>
+              </tr>
+              <tr class="vue">
+                <td class="subject"><img class="skill-img" src="images/vue.svg" alt="lang"></td>
+                <td><span class="skill-text">中</span></td>
+              </tr>
+              <tr class="nuxt">
+                <td class="subject"><img class="skill-img" src="images/nuxt.svg" alt="lang"></td>
+                <td><span class="skill-text">中</span></td>
+              </tr>
+              <tr class="ruby">
+                <td class="subject"><img class="skill-img" src="images/ruby.svg" alt="lang"></td>
+                <td><span class="skill-text">中</span></td>
+              </tr>
+              <tr class="rails">
+                <td class="subject"><img class="skill-img" src="images/ruby_on_rails.svg" alt="lang"></td>
+                <td><span class="skill-text">中</span></td>
+              </tr>
+              <tr class="sql">
+                <td class="subject"><img class="skill-img" src="images/mysql.svg" alt="lang"></td>
+                <td><span class="skill-text">下</span></td>
+              </tr>
+              <tr class="react">
+                <td class="subject"><img class="skill-img" src="images/react.svg" alt="lang"></td>
+                <td><span class="skill-text">下</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="project" class="project fadeUpTrigger">
+        <h2 class="project-title">参加したプロジェクト</h2>
+        <div class="project-item">
+          <img class="project-item-logo" src="images/machiconjp.png" alt="mj">
+          <span class="project-item-text">machiconjp / 街コンジャパン</span>
+          <a class="project-item-link" href="https://machicon.jp">リンク</a>
+        </div>
+      </div>
+      <div id="other" class="other fadeUpTrigger">
+        <h2 class="other-title">その他</h3>
+        <h3 class="other-item-title">最近読んだ本</h3>
+        <div class="other-carousel-container">
+          <div class="other-carousel center">
+            <div class="other-carousel-items"><img src="images/clean_code.jpg" alt="clean"></div>
+            <div class="other-carousel-items"><img src="images/readable_code.jpg" alt="readable"></div>
+            <div class="other-carousel-items"><img src="images/cherryhon.jpg" alt="ruby"></div>
+            <div class="other-carousel-items"><img src="images/nodejs.jpg" alt="nodejs"></div>
+          </div>
+        </div>
+
+        <h3 class="other-item-title">日本のオタク体験</h3>
+        <div class="other-carousel-container">
+          <div class="other-carousel center">
+            <div class="other-carousel-items"><img src="images/otaku1.jpg" alt="mirai"></div>
+            <div class="other-carousel-items"><img src="images/otaku2.jpg" alt="sendai"></div>
+            <div class="other-carousel-items"><img src="images/otaku3.jpg" alt="komike"></div>
+            <div class="other-carousel-items"><img src="images/otaku4.jpg" alt="nomikai"></div>
+            <div class="other-carousel-items"><img src="images/otaku5.jpg" alt="touhou"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-img">
+        <img class="footer-img-seaweed" src="images/seaweed.svg" alt="seaweed">
+        <img class="footer-img-seaweed" src="images/seaweed.svg" alt="seaweed">
+        <img class="footer-img-seaweed" src="images/seaweed.svg" alt="seaweed">
+        <img class="footer-img-seaweed" src="images/seaweed.svg" alt="seaweed">
+        <img class="footer-img-seaweed" src="images/seaweed.svg" alt="seaweed">
+      </div>
+    </div>
+  </section>
+  <div class="progress">
+    <p class="progress-text">scroll</p>
+    <div class="progress-container"> <span class="progress-bar"></span> <span class="progress-circle"></span> </div>
+  </div>
+</main>
+
+</body>
+</html>

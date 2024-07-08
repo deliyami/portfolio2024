@@ -1,0 +1,26 @@
+.other-carousel .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.other-carousel-prev,
+.other-carousel-next {
+  width: 50px;
+  top: 50%;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  border: 0;
+  background-color: transparent;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.other-carousel-prev {
+  left: 0.5rem;
+}
+.other-carousel-next {
+  right: 0.5rem;
+}

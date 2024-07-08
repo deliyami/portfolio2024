@@ -1,0 +1,172 @@
+@media screen and (min-width: 960px) {
+  header {
+    max-width: 1000px;
+    margin-left: 50%;
+    translate: -50%;
+  }
+  .hamburger-menu.active {
+    transform: translateX(-22vw);
+  }
+  .SP {
+    margin-top: 0;
+    height: calc(100% - 5rem - 18.5px);
+    position: fixed;
+    left: 50%;
+    top: 5rem;
+    z-index: 50;
+    width: 375px;
+    display: flex;
+    padding: 18.5px;
+    flex-direction: column;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0px 0px 24px rgb(240, 57, 119);
+  }
+
+  .wave-yellow {
+    margin-top: 500px;
+  }
+  .wave-yellow .wave {
+    background-size: contain;
+  }
+  .first-view {
+    width: 100%;
+    position: fixed;
+  }
+  .first-view-profile {
+    width: 50%;
+  }
+  .first-view-image {
+    padding-top: 40px;
+    margin-left: 0;
+    width: 425px;
+    position: relative;
+  }
+  .first-view-image-title {
+    margin: 0;
+    margin-left: calc(50% - 500px);
+    padding-top: 40px;
+    width: 425px;
+  }
+  .first-view-image-person {
+    margin-top: 150px;
+  }
+
+  .first-view-image-side {
+    top: 50px;
+    width: 425px;
+    height: 500px;
+
+    position: absolute;
+    /* left: calc(50% - 500px); */
+  }
+  .first-view-image-side .drink {
+    top: 166px;
+    width: 225px;
+  }
+  .first-view-left-image.menu {
+    width: 101px;
+    margin-top: 351px;
+  }
+  .first-view-left-image.drink {
+    left: -37px;
+  }
+  .first-view-right-image.menu {
+    width: 102px;
+    margin-top: 366px;
+    right: 0;
+  }
+  .first-view-right-image.drink {
+    right: -37px;
+  }
+
+  .first-view-date {
+    margin: 0;
+    top: calc((100vh - 715px) / 2);
+    z-index: 1;
+    translate: 0 -50%;
+    /* bottom: 16.25%; */
+    /* position: fixed; */
+  }
+  .first-view-date img {
+    margin-left: 0;
+    width: 425px;
+  }
+  .top-frame .gradient-block {
+    aspect-ratio: auto;
+    height: 538px;
+  }
+  .top-frame-image {
+    background-size: contain;
+    height: 73px;
+  }
+
+  .cracker {
+    width: 100%;
+    height: 540px;
+    background-repeat: repeat;
+    background-size: auto;
+    position: absolute;
+    display: block;
+  }
+
+  .wave {
+    height: 230px;
+  }
+  .SP-container {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .SP-container::-webkit-scrollbar {
+    display: none;
+  }
+  .progress {
+    margin-top: 270px;
+    position: fixed;
+    left: calc(432px + 50%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .progress-container {
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+  }
+  .progress-bar {
+    width: 3px;
+    height: 120px;
+    display: block;
+    background-color: white;
+  }
+  .progress-circle {
+    /* top: 30%; */
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-color: #111739;
+    border: 3px white solid;
+    border-radius: 100%;
+    margin-left: -9px;
+    margin-top: -12px;
+  }
+  .progress-text {
+    transform: rotate(-90deg);
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  .hamburger-menu.active {
+    transform: translateX(calc(-50vw + 280px));
+  }
+  .first-view-image,
+  .first-view-date img {
+    margin: 0;
+    margin-left: calc(50% - 500px);
+  }
+  .first-view-image-side {
+    left: calc(50% - 500px);
+  }
+} */
