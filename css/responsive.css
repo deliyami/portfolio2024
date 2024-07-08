@@ -55,9 +55,7 @@
     top: 50px;
     width: 425px;
     height: 500px;
-
     position: absolute;
-    /* left: calc(50% - 500px); */
   }
   .first-view-image-side .drink {
     top: 166px;
@@ -84,8 +82,6 @@
     top: calc((100vh - 715px) / 2);
     z-index: 1;
     translate: 0 -50%;
-    /* bottom: 16.25%; */
-    /* position: fixed; */
   }
   .first-view-date img {
     margin-left: 0;
@@ -141,7 +137,6 @@
     background-color: white;
   }
   .progress-circle {
-    /* top: 30%; */
     position: absolute;
     width: 14px;
     height: 14px;
@@ -156,17 +151,8 @@
     transform: rotate(-90deg);
   }
 }
-
-/* @media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .hamburger-menu.active {
-    transform: translateX(calc(-50vw + 280px));
+    transform: translateX(calc(-50vw + 290px))
   }
-  .first-view-image,
-  .first-view-date img {
-    margin: 0;
-    margin-left: calc(50% - 500px);
-  }
-  .first-view-image-side {
-    left: calc(50% - 500px);
-  }
-} */
+}

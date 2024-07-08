@@ -15,15 +15,13 @@ $(document).ready(function () {
   const hamCancel = $('.hamburger-cancel-button');
   const nav = $('.hamburger-menu');
   function handleNav() {
-    //ハンバーガーメニューをクリックしたら
-    nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外し
+    nav.toggleClass('active');
   }
   ham.on('click', handleNav);
   hamCancel.on('click', handleNav);
 
   $('.nav-top').click(() => {
     if ($(window).width() >= RESPONSIVE_WIDTH)
-      // $('html, body').animate({ scrollTop: 0 }, SCROLL_SPEED);
       $('.SP-container').animate({ scrollTop: 0 }, SCROLL_SPEED);
     else $('html, body').animate({ scrollTop: 0 }, SCROLL_SPEED);
     return false;
@@ -61,7 +59,6 @@ $(document).ready(function () {
       isNeedScroll = false
       const currentScrollTop = $(document).scrollTop();
       console.log(currentScrollTop)
-      // $(window).scrollTop(currentScrollTop + 1);
     }
   })
 
@@ -69,20 +66,11 @@ $(document).ready(function () {
   const fishMove = () => {
     const windowWidth = $(window).width();
     if (windowWidth <= RESPONSIVE_WIDTH) {
-      // var scrollTop = $(this).scrollTop();
-
-      // if (scrollTop >= 200 && scrollTop <= 500) {
-      //     $('.fish-wave').css('left', '0');
-      // } else {
-      //     $('.fish-wave').css('left', '100%');
-      // }
       const scrolled = $(this).scrollTop()
       const fishEl = $('.fish-wave-right')
       if (scrolled >= FISH_WAVE_SCROLL_START_AT && scrolled <= FISH_WAVE_SCROLL_END_AT) {
         const percentage = (scrolled - FISH_WAVE_SCROLL_START_AT) / fishWaveMaxHeight
         const px = percentage * FISH_PX
-        // console.log(scrolled)
-        // fishEl.css('left', `calc(${Math.round(percentage * 100)}% - ${px}px)`);
         fishEl.css('left', `calc(${100 - Math.round(percentage * 100)}% - ${px}px)`);
       } else {
         fishEl.css('left', '100%');
@@ -92,7 +80,6 @@ $(document).ready(function () {
       if (scrolled >= FISH_WAVE_SECOND_SCROLL_START_AT && scrolled <= FISH_WAVE_SECOND_SCROLL_END_AT) {
         const percentage = (scrolled - FISH_WAVE_SECOND_SCROLL_START_AT) / fishWaveMaxHeight
         const px = percentage * FISH_PX
-        // fishEl.css('left', `calc(${Math.round(percentage * 100)}% - ${px}px)`);
         fishElSecond.css('right', `calc(${100 - Math.round(percentage * 100)}% - ${px}px)`);
       } else {
         fishElSecond.css('right', '100%');
@@ -122,22 +109,6 @@ $(document).ready(function () {
     const value = $('.fadeUpTrigger')
     $('.fadeUpTrigger').each(function (index, tag) {
       initFade(SPContainer, tag);
-      // if ($(window).width() >= 960) {
-      //   //fadeUpTriggerというクラス名が
-      //   var elemPos = tag.offsetTop; //要素より、50px上の
-      //   var scroll = SPContainer.scrollTop();
-      //   var containerHeight = SPContainer.height();
-      //   if (scroll % 10 == 0) {
-      //     console.log(
-      //       `here is fade function ${elemPos}, ${scroll}, ${containerHeight}`
-      //     );
-      //   }
-      //   if (scroll >= elemPos - containerHeight) {
-      //     tag.classList.add('fadeUp'); // 画面内に入ったらfadeUpというクラス名を追記
-      //   } else {
-      //     tag.classList.remove('fadeUp'); // 画面外に出たらfadeUpというクラス名を外す
-      //   }
-      // }
     });
   });
   initFade($('.SP-container'), document.getElementsByClassName('fadeUpTrigger')[0]);
@@ -145,23 +116,13 @@ $(document).ready(function () {
 
 function initFade(SPContainer, tag) {
   if ($(window).width() >= RESPONSIVE_WIDTH) {
-    //fadeUpTriggerというクラス名が
-    var elemPos = tag.offsetTop; //要素より、50px上の
+    var elemPos = tag.offsetTop;
     var scroll = SPContainer.scrollTop();
     var containerHeight = SPContainer.height();
     if (scroll >= elemPos - containerHeight) {
-      tag.classList.add('fadeUp'); // 画面内に入ったらfadeUpというクラス名を追記
+      tag.classList.add('fadeUp');
     } else {
-      tag.classList.remove('fadeUp'); // 画面外に出たらfadeUpというクラス名を外す
+      tag.classList.remove('fadeUp');
     }
   }
 }
-
-// window.addEventListener('scroll',function(){
-//   var bodyEl = document.querySelector('body');
-//   var bodyHeight = bodyEl.offsetHeight;
-//   var scrollable = bodyHeight - window.innerHeight;
-//   var progressEl = document.querySelector('.progress');
-//   var per = Math.floor(window.scrollY / scrollable * 100) + '%';
-//   progressEl.style.width = per;
-// });
